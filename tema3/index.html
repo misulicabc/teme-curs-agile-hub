@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex is Cool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul> 
+            <li>
+                <a href="#">
+                    <span class="nav-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-right" class="svg-inline--fa fa-chevron-circle-right fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>
+                    </span>
+                    <span class="nav-text">Awesome nav</span>
+                </a>
+            </li>       
+            <li>
+                <a href="#">
+                    <span class="nav-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cat" class="svg-inline--fa fa-cat fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M290.59 192c-20.18 0-106.82 1.98-162.59 85.95V192c0-52.94-43.06-96-96-96-17.67 0-32 14.33-32 32s14.33 32 32 32c17.64 0 32 14.36 32 32v256c0 35.3 28.7 64 64 64h176c8.84 0 16-7.16 16-16v-16c0-17.67-14.33-32-32-32h-32l128-96v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V289.86c-10.29 2.67-20.89 4.54-32 4.54-61.81 0-113.52-44.05-125.41-102.4zM448 96h-64l-64-64v134.4c0 53.02 42.98 96 96 96s96-42.98 96-96V32l-64 64zm-72 80c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16zm80 0c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z"></path></svg>
+                    </span>
+                    <span class="nav-text">Cats</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="reddit-alien" class="svg-inline--fa fa-reddit-alien fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z"></path></svg>
+                    </span>
+                    <span class="nav-text">Aliens</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-astronaut" class="svg-inline--fa fa-user-astronaut fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M64 224h13.5c24.7 56.5 80.9 96 146.5 96s121.8-39.5 146.5-96H384c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-13.5C345.8 39.5 289.6 0 224 0S102.2 39.5 77.5 96H64c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zm40-88c0-22.1 21.5-40 48-40h144c26.5 0 48 17.9 48 40v24c0 53-43 96-96 96h-48c-53 0-96-43-96-96v-24zm72 72l12-36 36-12-36-12-12-36-12 36-36 12 36 12 12 36zm151.6 113.4C297.7 340.7 262.2 352 224 352s-73.7-11.3-103.6-30.6C52.9 328.5 0 385 0 454.4v9.6c0 26.5 21.5 48 48 48h80v-64c0-17.7 14.3-32 32-32h128c17.7 0 32 14.3 32 32v64h80c26.5 0 48-21.5 48-48v-9.6c0-69.4-52.9-125.9-120.4-133zM272 448c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm-96 0c-8.8 0-16 7.2-16 16v48h32v-48c0-8.8-7.2-16-16-16z"></path></svg>
+                    </span>
+                    <span class="nav-text">Space</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="space-shuttle" class="svg-inline--fa fa-space-shuttle fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M592.604 208.244C559.735 192.836 515.777 184 472 184H186.327c-4.952-6.555-10.585-11.978-16.72-16H376C229.157 137.747 219.403 32 96.003 32H96v128H80V32c-26.51 0-48 28.654-48 64v64c-23.197 0-32 10.032-32 24v40c0 13.983 8.819 24 32 24v16c-23.197 0-32 10.032-32 24v40c0 13.983 8.819 24 32 24v64c0 35.346 21.49 64 48 64V352h16v128h.003c123.4 0 133.154-105.747 279.997-136H169.606c6.135-4.022 11.768-9.445 16.72-16H472c43.777 0 87.735-8.836 120.604-24.244C622.282 289.845 640 271.992 640 256s-17.718-33.845-47.396-47.756zM488 296a8 8 0 0 1-8-8v-64a8 8 0 0 1 8-8c31.909 0 31.942 80 0 80z"></path></svg>
+                    </span>
+                    <span class="nav-text">Shuttle</span>
+                </a>
+            </li>        
+            <li>
+                <a href="#">
+                    <span class="nav-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M279.135 512c78.756 0 150.982-35.804 198.844-94.775 28.27-34.831-2.558-85.722-46.249-77.401-82.348 15.683-158.272-47.268-158.272-130.792 0-48.424 26.06-92.292 67.434-115.836 38.745-22.05 28.999-80.788-15.022-88.919A257.936 257.936 0 0 0 279.135 0c-141.36 0-256 114.575-256 256 0 141.36 114.576 256 256 256zm0-464c12.985 0 25.689 1.201 38.016 3.478-54.76 31.163-91.693 90.042-91.693 157.554 0 113.848 103.641 199.2 215.252 177.944C402.574 433.964 344.366 464 279.135 464c-114.875 0-208-93.125-208-208s93.125-208 208-208z"></path></svg>
+                    </span>
+                    <span class="nav-text">By Misha</span>
+                </a>
+            </li>
+        </ul>
+        
+    </nav>
+    <main>
+    <h1>CSS is Cool</h1> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae esse fugiat? Animi tenetur, earum velit laudantium qui maiores fugiat atque error quasi itaque quam laboriosam, totam alias consequuntur quia!Officia vitae odit, quasi harum facilis quam alias nulla deserunt eaque ratione mollitia incidunt ipsum reiciendis et molestiae nesciunt saepe. Asperiores necessitatibus reprehenderit placeat, alias temporibus quaerat itaque facere perferendis!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem adipisci sint ullam aliquam neque atque, soluta quis et, fuga harum, illo laborum ipsum amet tempore. Velit dolorem esse veniam nisi!
+    Quam consequuntur tenetur in ipsam magnam aspernatur at facere quidem ut saepe! Labore error fugit deleniti saepe id rem sequi, facere pariatur reiciendis, dolor soluta aspernatur quia. Sed, fugit quibusdam?
+    Iure, atque culpa expedita officiis soluta ex totam ea dolores voluptatem rem ipsum provident laudantium quam, delectus eum consequatur optio iusto animi nemo cupiditate nobis consequuntur aliquam voluptatum dolorem. Porro!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, earum quisquam. Impedit totam natus illo quo in velit, ut ex odit? Eos ab natus rem quam tempora porro. Assumenda, magnam.
+    Praesentium debitis fugit consequatur voluptate facilis vero adipisci tempora ducimus repellat placeat dolorem reprehenderit quaerat quos ipsa inventore eveniet blanditiis optio, veritatis, soluta maiores quod asperiores harum ad nam. Quisquam.
+    Ad odio dolores ipsa, vero nisi doloribus odit nihil, quisquam repellendus exercitationem rerum error illo facilis minus maiores repellat repudiandae. Delectus aliquid, magnam obcaecati sapiente totam similique magni temporibus cum.
+    Nesciunt voluptate error ipsam porro ad vitae dolorem. Accusamus doloribus, illo reprehenderit quidem cum porro corrupti rem. Placeat corporis, at iste earum nesciunt excepturi? Deleniti at aut rerum quaerat accusantium.
+    Soluta esse rerum in dolorem. Totam dolorem alias ipsam, dolores id earum deleniti assumenda sint explicabo doloremque voluptas minus, iste qui temporibus. Officia reiciendis eveniet pariatur sint quisquam magni cum.</p>
+    </main>
+</body>
+</html>
