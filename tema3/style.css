@@ -18,7 +18,7 @@ h1{
 }
 .navbar{
     color:#fefefe;
-    min-width:8vw;
+    min-width:5vw;
     position:fixed;
     top:0;
     left:0;
@@ -41,9 +41,7 @@ h1{
     padding:5px;
 }
 
-.navbar li:last-child{
-    margin-top:auto;
-}
+
 
 .nav-text{
     display:none; 
@@ -67,9 +65,14 @@ li:hover{
     background-color: #333;
 }
 .navbar svg{
-    max-width: 7vw;
+    max-width: 5vw;
 }
 main{
-    margin-left:6vw;
-    
+    margin-left:6vw;    
+}
+.navbar li:last-child{
+    margin-top:auto;
+}
+li{
+    transition: all 1s ease-in-out;
 }
