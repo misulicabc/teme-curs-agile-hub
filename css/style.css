@@ -1,0 +1,64 @@
+.container{
+    text-align: center;
+}
+.container-game{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.container-game-card{
+    flex-basis:13%;
+    width:10vw; 
+    min-width: 100px;
+    height:16vw;
+    min-height: 130px;
+    max-height: 30vh;
+    margin:1vw;
+
+    border-radius: 10px;
+
+    background: url("../assets/0.jpg")  center center / cover no-repeat;
+    transition: background-image 0.2s ease-in-out;
+    
+}
+.container-controls-btn{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container-controls-btn>button{
+    padding:5px 10px;
+    margin:10px 20px;
+    min-width: 200px;
+
+    font-size:1.5rem;
+    font-weight:800;
+
+    text-transform: uppercase;;
+    border-radius: 5px;
+}
+
+[data-dificulty="4"] {
+    background-color:greenyellow;    
+    border-color:green;
+}
+[data-dificulty="4"]:hover{
+    background-color:#11CC11;  
+}
+
+[data-dificulty="6"] {
+    background-color:orange;    
+    border-color:darkorange;
+}
+[data-dificulty="6"]:hover{
+    background-color:rgb(246, 137, 4);  
+}
+[data-dificulty="9"] {
+    background-color:lightcoral;    
+    border-color:red;
+}
+[data-dificulty="9"]:hover{
+    background-color:red;  
+}
